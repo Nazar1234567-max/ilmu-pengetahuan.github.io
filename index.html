@@ -1,0 +1,266 @@
+<html class="scroll-smooth" lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Ilmu Pengetahuan - Edukasi Modern
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Inter', sans-serif;
+    }
+    /* Scroll animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+ </head>
+ <body class="bg-white text-gray-800">
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-gradient-to-r from-green-600 to-blue-600 shadow-md z-50">
+   <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <a class="text-white font-bold text-2xl tracking-wide hover:text-gray-200 transition" href="#home">
+     IlmuPengetahuan
+    </a>
+    <ul class="hidden md:flex space-x-8 text-white font-semibold">
+     <li>
+      <a class="hover:text-gray-200 transition" href="#home">
+       Beranda
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-gray-200 transition" href="#tentang">
+       Tentang
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-gray-200 transition" href="#topik">
+       Topik Populer
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-gray-200 transition" href="#kontak">
+       Kontak
+      </a>
+     </li>
+    </ul>
+    <button aria-label="Toggle menu" class="md:hidden text-white focus:outline-none" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <div class="hidden md:hidden bg-gradient-to-r from-green-600 to-blue-600 px-6 pb-4" id="mobile-menu">
+    <ul class="flex flex-col space-y-4 text-white font-semibold">
+     <li>
+      <a class="block hover:text-gray-200 transition" href="#home">
+       Beranda
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-gray-200 transition" href="#tentang">
+       Tentang
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-gray-200 transition" href="#topik">
+       Topik Populer
+      </a>
+     </li>
+     <li>
+      <a class="block hover:text-gray-200 transition" href="#kontak">
+       Kontak
+      </a>
+     </li>
+    </ul>
+   </div>
+  </nav>
+  <!-- Hero Section -->
+  <header class="pt-24 bg-gradient-to-r from-green-50 to-blue-50 min-h-[70vh] flex items-center" id="home">
+   <div class="max-w-7xl mx-auto px-6 text-center md:text-left">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-green-800 mb-4 leading-tight">
+     Jelajahi Dunia
+     <span class="text-blue-700">
+      Ilmu Pengetahuan
+     </span>
+     <br/>
+     untuk Masa Depan Cerah
+    </h1>
+    <p class="text-lg md:text-xl text-gray-700 max-w-xl mx-auto md:mx-0">
+     Ilmu pengetahuan adalah kunci untuk memahami alam semesta dan mengembangkan teknologi yang mengubah dunia. Mari belajar dan tumbuh bersama.
+    </p>
+    <a class="inline-block mt-8 px-8 py-3 bg-blue-700 text-white font-semibold rounded-lg shadow-lg hover:bg-blue-800 transition" href="#topik">
+     Jelajahi Topik Populer
+    </a>
+   </div>
+  </header>
+  <!-- Tentang Ilmu Pengetahuan -->
+  <section class="max-w-7xl mx-auto px-6 py-16" id="tentang">
+   <h2 class="text-3xl font-bold text-green-800 mb-6 text-center fade-in">
+    Tentang Ilmu Pengetahuan
+   </h2>
+   <div class="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed fade-in">
+    <p>
+     Ilmu pengetahuan adalah kumpulan pengetahuan yang diperoleh melalui metode ilmiah untuk memahami fenomena alam dan sosial. Dengan ilmu pengetahuan, manusia dapat mengembangkan teknologi, meningkatkan kualitas hidup, dan menjawab berbagai pertanyaan tentang dunia di sekitar kita.
+    </p>
+    <p class="mt-4">
+     Melalui penelitian dan eksperimen, ilmu pengetahuan terus berkembang dan membuka wawasan baru yang membantu kita menghadapi tantangan global seperti perubahan iklim, kesehatan, dan eksplorasi luar angkasa.
+    </p>
+   </div>
+  </section>
+  <!-- Topik Populer -->
+  <section class="bg-green-50 py-16" id="topik">
+   <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-green-800 mb-12 text-center fade-in">
+     Topik Populer
+    </h2>
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+     <article class="bg-white rounded-lg shadow-md p-6 fade-in flex flex-col">
+      <img alt="Ilustrasi eksperimen fisika dengan alat-alat laboratorium dan diagram gelombang" class="rounded-md mb-4 object-cover h-48 w-full" height="400" src="https://storage.googleapis.com/a1aa/image/4aca5baa-2a45-4d29-d05f-858b295adb73.jpg" width="600"/>
+      <h3 class="text-xl font-semibold text-green-900 mb-2">
+       Fisika
+      </h3>
+      <p class="text-gray-700 flex-grow">
+       Fisika mempelajari sifat dan interaksi materi serta energi, dari partikel terkecil hingga alam semesta. Topik ini mencakup mekanika, termodinamika, dan fisika kuantum.
+      </p>
+     </article>
+     <article class="bg-white rounded-lg shadow-md p-6 fade-in flex flex-col">
+      <img alt="Gambar mikroskop dan sel-sel biologis berwarna hijau yang menunjukkan struktur kehidupan" class="rounded-md mb-4 object-cover h-48 w-full" height="400" src="https://storage.googleapis.com/a1aa/image/71de0fca-aa76-4011-e35e-7daec5f2beac.jpg" width="600"/>
+      <h3 class="text-xl font-semibold text-green-900 mb-2">
+       Biologi
+      </h3>
+      <p class="text-gray-700 flex-grow">
+       Biologi adalah ilmu tentang makhluk hidup, mulai dari struktur sel hingga ekosistem. Ini membantu kita memahami kehidupan dan keberagaman hayati di bumi.
+      </p>
+     </article>
+     <article class="bg-white rounded-lg shadow-md p-6 fade-in flex flex-col">
+      <img alt="Ilustrasi tabung reaksi berisi cairan berwarna biru dan hijau dalam laboratorium kimia" class="rounded-md mb-4 object-cover h-48 w-full" height="400" src="https://storage.googleapis.com/a1aa/image/5bdcfc72-595b-4205-1601-2de4bb2764f4.jpg" width="600"/>
+      <h3 class="text-xl font-semibold text-green-900 mb-2">
+       Kimia
+      </h3>
+      <p class="text-gray-700 flex-grow">
+       Kimia mempelajari komposisi, struktur, dan perubahan materi. Ilmu ini penting untuk pengembangan obat, bahan baru, dan teknologi ramah lingkungan.
+      </p>
+     </article>
+     <article class="bg-white rounded-lg shadow-md p-6 fade-in flex flex-col">
+      <img alt="Gambar teleskop besar mengarah ke langit malam penuh bintang dan galaksi" class="rounded-md mb-4 object-cover h-48 w-full" height="400" src="https://storage.googleapis.com/a1aa/image/48598c65-d485-44f8-8ba4-1b3f30a75c60.jpg" width="600"/>
+      <h3 class="text-xl font-semibold text-green-900 mb-2">
+       Astronomi
+      </h3>
+      <p class="text-gray-700 flex-grow">
+       Astronomi adalah ilmu yang mempelajari benda-benda langit dan alam semesta. Ini membuka wawasan tentang asal usul dan struktur kosmos.
+      </p>
+     </article>
+     <article class="bg-white rounded-lg shadow-md p-6 fade-in flex flex-col">
+      <img alt="Ilustrasi robot dan perangkat teknologi modern yang menunjukkan kemajuan teknologi" class="rounded-md mb-4 object-cover h-48 w-full" height="400" src="https://storage.googleapis.com/a1aa/image/ce260e4a-7fdd-4ab0-79d1-3072b38ccb70.jpg" width="600"/>
+      <h3 class="text-xl font-semibold text-green-900 mb-2">
+       Teknologi
+      </h3>
+      <p class="text-gray-700 flex-grow">
+       Teknologi mengaplikasikan ilmu pengetahuan untuk menciptakan alat dan sistem yang memudahkan kehidupan manusia dan mendorong inovasi.
+      </p>
+     </article>
+    </div>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-green-600 to-blue-600 text-white py-12" id="kontak">
+   <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div>
+     <h4 class="text-xl font-semibold mb-4">
+      Kontak Kami
+     </h4>
+     <p>
+      Jl.cisalada/Kp cukanggaleuh
+     </p>
+     <p class="mt-2">
+      Email: nazar120@gmail.com
+     </p>
+     <p class="mt-2">
+      Telepon: 085691367384
+     </p>
+    </div>
+    <div>
+     <h4 class="text-xl font-semibold mb-4">
+      Tautan Sosial Media
+     </h4>
+     <ul class="flex space-x-6 text-2xl">
+      <li>
+       <a aria-label="Facebook" class="hover:text-gray-300 transition" href="https://facebook.com" rel="noopener" target="_blank">
+        <i class="fab fa-facebook-square">
+        </i>
+       </a>
+      </li>
+      <li>
+       <a aria-label="Twitter" class="hover:text-gray-300 transition" href="https://twitter.com" rel="noopener" target="_blank">
+        <i class="fab fa-twitter-square">
+        </i>
+       </a>
+      </li>
+      <li>
+       <a aria-label="Instagram" class="hover:text-gray-300 transition" href="https://instagram.com" rel="noopener" target="_blank">
+        <i class="fab fa-instagram-square">
+        </i>
+       </a>
+      </li>
+      <li>
+       <a aria-label="LinkedIn" class="hover:text-gray-300 transition" href="https://linkedin.com" rel="noopener" target="_blank">
+        <i class="fab fa-linkedin">
+        </i>
+       </a>
+      </li>
+     </ul>
+    </div>
+    <div class="flex flex-col justify-between">
+     <h4 class="text-xl font-semibold mb-4">
+      Dibuat oleh @Nazar
+     </h4>
+     <p class="text-gray-200">
+      © 2025 IlmuPengetahuan. Semua hak dilindungi.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <script>
+   // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Scroll animation for fade-in elements
+    const faders = document.querySelectorAll('.fade-in');
+
+    const appearOptions = {
+      threshold: 0.1,
+      rootMargin: "0px 0px -50px 0px"
+    };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+          return;
+        } else {
+          entry.target.classList.add('visible');
+          appearOnScroll.unobserve(entry.target);
+        }
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
+ </body>
+</html>
